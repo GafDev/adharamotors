@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>AdharaMotors | Catalogo</title>
+    <style>
+         body {
+            background-color: #fff;
+            overflow-x: hidden;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        nav {
+            background-color: white;
+          box-shadow: 0px 2px 9px #ccc;
+        }
+
+
+        .row {
+          justify-content: center;
+          background-color: #f1f1f1f1;
+        }
+
+        .catalogo {
+          margin-left: 50px;
+          margin: 50px;
+          display: inline-block;
+        }
+
+        .card {
+          padding: 10px;
+          border-radius: 4px;
+          box-shadow: 0px 2px 9px #ccc;
+          border: none;
+        }
+
+        footer {
+          box-shadow: 0px -2px 9px #ccc;
+          padding: 50px;
+          margin-top: 50px;
+          font-size: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="img/AM logo.jpg" height="75" width="75"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="proyecto.html">Inicio</a>
+                  </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                  </li>
+                </ul>
+                <div class="d-flex">
+                  <input class="form-control me-2" type="search" id="inputSearch" placeholder="Buscar">
+                  <button class="btn btn-outline-success" onclick="cambiarDisplay()">Search</button>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <h3 class="catalogo">Catalogo</h3>
+
+    <button type="button" class="btn btn-outline-success" onclick="todos()" style="margin-left: 2px;">Todos</button>
+    <button type="button" class="btn btn-outline-success" onclick="nissan()" style="margin-left: 2px;">Nissan</button>
+    <button type="button" class="btn btn-outline-success" onclick="toyota()" style="margin-left: 2px;">Toyota</button>
+    <button type="button" class="btn btn-outline-success" onclick="mitsubishi()" style="margin-left: 2px;">Mitsubishi</button>
+    <button type="button" class="btn btn-outline-success" onclick="honda()" style="margin-left: 2px;">Honda</button>
+    <button type="button" class="btn btn-outline-success" onclick="mazda()" style="margin-left: 2px;">Mazda</button>
+
+    <button type="button" class="btn btn-outline-danger" style="margin-left: 455px;"><a href="proyecto.html" class="nav-link active">Volver</a></button>
+    
+    <div class="row">
+
+      <div class="mitsubishi card m-2" style="width: 18rem;">
+        <img src="img/lancer evo.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Mitsubishi</h5>
+          <p class="card-text">Lancer evo</p>
+        </div>
+      </div>
+
+      <div class="nissan card m-2" style="width: 18rem;">
+        <img src="img/versiones-frontier-xe-tm.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Nissan</h5>
+          <p class="card-text">Frontier XE Manual</p>
+        </div>
+      </div>
+
+      <div class="toyota card m-2" style="width: 18rem;">
+        <img src="img/prado.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Toyota</h5>
+          <p class="card-text">Land Cruiser Prado</p>
+        </div>
+      </div>
+
+      <div class="honda card m-2" style="width: 18rem;">
+        <img src="img/civic type r.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Honda</h5>
+          <p class="card-text">Civic Type R 2023</p>
+        </div>
+      </div>
+
+      <div class="mazda card m-2" style="width: 18rem;">
+        <img src="img/mx5 miata.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Mazda</h5>
+          <p class="card-text">MX-5 Miata</p>
+        </div>
+      </div>
+
+      <div class="toyota card m-2" style="width: 18rem;">
+        <img src="img/RAV4-040.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Toyota</h5>
+          <p class="card-text">Rav 4</p>
+        </div>
+      </div>
+
+      <div class="honda card m-2" style="width: 18rem;">
+        <img src="img/city.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Honda</h5>
+          <p class="card-text">City 2021</p>
+        </div>
+      </div>
+
+      <div class="mitsubishi card m-2" style="width: 18rem;">
+        <img src="img/outlander.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Mitsubishi</h5>
+          <p class="card-text">Outlander</p>
+        </div>
+      </div>
+
+      <div class="nissan card m-2" style="width: 18rem;">
+        <img src="img/versa.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Nissan</h5>
+          <p class="card-text">Versa</p>
+        </div>
+      </div>
+
+      <div class="mazda card m-2" style="width: 18rem;">
+        <img src="img/MAZDA6ICON.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Mazda</h5>
+          <p class="card-text">Mazda 6</p>
+        </div>
+      </div>
+
+      <div class="honda card m-2" style="width: 18rem;">
+        <img src="img/rigdeline.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Honda</h5>
+          <p class="card-text">Rigdeline</p>
+        </div>
+      </div>
+
+      <div class="mazda card m-2" style="width: 18rem;">
+        <img src="img/cx3.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Mazda</h5>
+          <p class="card-text">CX-3</p>
+        </div>
+      </div>
+
+      <div class="mitsubishi card m-2" style="width: 18rem;">
+        <img src="img/l200.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Mitsubishi</h5>
+          <p class="card-text">L200</p>
+        </div>
+      </div>
+
+      <div class="nissan card m-2" style="width: 18rem;">
+        <img src="img/xtrail.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Nissan</h5>
+          <p class="card-text">X-trail</p>
+        </div>
+      </div>
+
+      <div class="toyota card m-2" style="width: 18rem;">
+        <img src="img/coroll4.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Toyota</h5>
+          <p class="card-text">Corolla</p>
+        </div>
+      </div>
+
+      <div class="mazda card m-2" style="width: 18rem;">
+        <img src="img/2015-Mazda-3-2-5L-hatchback-PLACEMENT.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Mazda</h5>
+          <p class="card-text">Hatchback 2015</p>
+        </div>
+      </div>
+
+      <div class="honda card m-2" style="width: 18rem;">
+        <img src="img/crv2023.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Honda</h5>
+          <p class="card-text">CR-V 2023</p>
+        </div>
+      </div>
+
+      <div class="toyota card m-2" style="width: 18rem;">
+        <img src="img/LC-300-GR-S.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Toyota</h5>
+          <p class="card-text">LC300</p>
+        </div>
+      </div>
+
+      <div class="nissan card m-2" style="width: 18rem;">
+        <img src="img/sentran.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Nissan</h5>
+          <p class="card-text">Sentra</p>
+        </div>
+      </div>
+
+      <div class="mitsubishi card m-2" style="width: 18rem;">
+        <img src="img/ASX1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Mitsubishi</h5>
+          <p class="card-text">ASX</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      &copy 2023 AdharaMotors 
+    </footer>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script>
+      // Obtén todos los elementos .card
+const cards = document.querySelectorAll('.card');
+
+// Agrega un controlador de eventos a cada elemento .card
+cards.forEach((card) => {
+  card.addEventListener('mouseenter', () => {
+    // Establece la opacidad de todas las tarjetas, excepto la actual, en 0.5
+    cards.forEach((c) => {
+      if (c !== card) {
+        c.style.opacity = '0.5';
+      }
+    });
+    // Establece la opacidad del elemento actual a 1 con una transición suave
+    card.style.transition = 'opacity 0.3s';
+    card.style.opacity = '1';
+  });
+});
+
+// Cuando el cursor sale de una tarjeta, restablece la opacidad de todas las tarjetas
+cards.forEach((card) => {
+  card.addEventListener('mouseleave', () => {
+    cards.forEach((c) => {
+      c.style.transition = 'opacity 0.3s'; // Agrega transición suave
+      c.style.opacity = '1';
+    });
+  });
+});
+
+//funcion de search
+
+ // Función para cambiar el estilo de la tarjeta
+ function cambiarDisplay() {
+      var nissan = document.getElementsByClassName('nissan');
+      var mitsubishi = document.getElementsByClassName('mitsubishi');
+      var toyota = document.getElementsByClassName('toyota');
+      var honda = document.getElementsByClassName('honda');
+      var mazda = document.getElementsByClassName('mazda');
+      var input = document.getElementById('inputSearch');
+      
+
+     
+
+      if (input.value === 'nissan' || input.value === 'Nissan') {
+          for (var i = 0; i < nissan.length; i++) {
+          nissan[i].style.display = 'block';
+      }
+      for (var i = 0; i < mitsubishi.length; i++){
+        mitsubishi[i].style.display = 'none';
+      }
+      for (var i = 0; i < toyota.length; i++){
+        toyota[i].style.display = 'none';
+      }
+      for (var i = 0; i < mazda.length; i++){
+        mazda[i].style.display = 'none';
+      }
+      for (var i = 0; i < honda.length; i++){
+        honda[i].style.display = 'none';
+      }
+    } 
+      
+      else if(input.value === 'mitsubishi' || input.value === 'Mitsubishi'){
+        for (var i = 0; i < nissan.length; i++) {
+          nissan[i].style.display = 'none';
+      }
+      for (var i = 0; i < mitsubishi.length; i++){
+        mitsubishi[i].style.display = 'block';
+      }
+      for (var i = 0; i < toyota.length; i++){
+        toyota[i].style.display = 'none';
+      }
+      for (var i = 0; i < mazda.length; i++){
+        mazda[i].style.display = 'none';
+      }
+      for (var i = 0; i < honda.length; i++){
+        honda[i].style.display = 'none';
+      }
+  }
+  
+  else if(input.value === 'honda' || input.value === 'Honda'){
+      for (var i = 0; i < nissan.length; i++) {
+          nissan[i].style.display = 'none';
+      }
+      for (var i = 0; i < mitsubishi.length; i++){
+        mitsubishi[i].style.display = 'none';
+      }
+      for (var i = 0; i < toyota.length; i++){
+        toyota[i].style.display = 'none';
+      }
+      for (var i = 0; i < mazda.length; i++){
+        mazda[i].style.display = 'none';
+      }
+      for (var i = 0; i < honda.length; i++){
+        honda[i].style.display = 'block';
+      }
+  }
+
+  else if(input.value === 'mazda' || input.value === 'Mazda'){
+      for (var i = 0; i < nissan.length; i++) {
+          nissan[i].style.display = 'none';
+      }
+      for (var i = 0; i < mitsubishi.length; i++){
+        mitsubishi[i].style.display = 'none';
+      }
+      for (var i = 0; i < toyota.length; i++){
+        toyota[i].style.display = 'none';
+      }
+      for (var i = 0; i < mazda.length; i++){
+        mazda[i].style.display = 'Block';
+      }
+      for (var i = 0; i < honda.length; i++){
+        honda[i].style.display = 'none';
+      }
+    }
+
+else if(input.value === 'toyota' || input.value === 'Toyota'){
+      for (var i = 0; i < nissan.length; i++) {
+          nissan[i].style.display = 'none';
+      }
+      for (var i = 0; i < mitsubishi.length; i++){
+        mitsubishi[i].style.display = 'none';
+      }
+      for (var i = 0; i < toyota.length; i++){
+        toyota[i].style.display = 'block';
+      }
+      for (var i = 0; i < mazda.length; i++){
+        mazda[i].style.display = 'none';
+      }
+      for (var i = 0; i < honda.length; i++){
+        honda[i].style.display = 'none';
+      }
+
+    }
+    input.value =''
+}
+
+
+function todos() {
+var nissan = document.getElementsByClassName('nissan');
+      var mitsubishi = document.getElementsByClassName('mitsubishi');
+      var toyota = document.getElementsByClassName('toyota');
+      var honda = document.getElementsByClassName('honda');
+      var mazda = document.getElementsByClassName('mazda');
+
+
+    for(var i= 0; i < mitsubishi.length; i++){
+          mitsubishi[i].style.display ="block"
+        }
+
+        for(var i= 0; i < nissan.length; i++){
+          nissan[i].style.display ="block"
+        }
+
+        for(var i= 0; i < mazda.length; i++){
+          mazda[i].style.display ="block"
+        }
+
+        for(var i= 0; i < honda.length; i++){
+          honda[i].style.display ="block"
+        }
+
+        for(var i= 0; i < toyota.length; i++){
+          toyota[i].style.display ="block"
+        }
+      }
+
+function mitsubishi() {
+var nissan = document.getElementsByClassName('nissan');
+      var mitsubishi = document.getElementsByClassName('mitsubishi');
+      var toyota = document.getElementsByClassName('toyota');
+      var honda = document.getElementsByClassName('honda');
+      var mazda = document.getElementsByClassName('mazda');
+
+
+for(var i= 0; i < mitsubishi.length; i++){
+  mitsubishi[i].style.display ="block"
+}
+
+for(var i= 0; i < nissan.length; i++){
+  nissan[i].style.display ="none"
+}
+
+for(var i= 0; i < mazda.length; i++){
+  mazda[i].style.display ="none"
+}
+
+for(var i= 0; i < honda.length; i++){
+  honda[i].style.display ="none"
+}
+
+for(var i= 0; i < toyota.length; i++){
+  toyota[i].style.display ="none"
+}
+}
+
+function nissan() {
+var nissan = document.getElementsByClassName('nissan');
+      var mitsubishi = document.getElementsByClassName('mitsubishi');
+      var toyota = document.getElementsByClassName('toyota');
+      var honda = document.getElementsByClassName('honda');
+      var mazda = document.getElementsByClassName('mazda');
+
+
+for(var i= 0; i < mitsubishi.length; i++){
+  mitsubishi[i].style.display ="none"
+}
+
+for(var i= 0; i < nissan.length; i++){
+  nissan[i].style.display ="block"
+}
+
+for(var i= 0; i < mazda.length; i++){
+  mazda[i].style.display ="none"
+}
+
+for(var i= 0; i < honda.length; i++){
+  honda[i].style.display ="none"
+}
+
+for(var i= 0; i < toyota.length; i++){
+  toyota[i].style.display ="none"
+}
+}
+
+function toyota() {
+var nissan = document.getElementsByClassName('nissan');
+      var mitsubishi = document.getElementsByClassName('mitsubishi');
+      var toyota = document.getElementsByClassName('toyota');
+      var honda = document.getElementsByClassName('honda');
+      var mazda = document.getElementsByClassName('mazda');
+
+for(var i= 0; i < mitsubishi.length; i++){
+  mitsubishi[i].style.display ="none"
+}
+
+for(var i= 0; i < nissan.length; i++){
+  nissan[i].style.display ="none"
+}
+
+for(var i= 0; i < mazda.length; i++){
+  mazda[i].style.display ="none"
+}
+
+for(var i= 0; i < honda.length; i++){
+  honda[i].style.display ="none"
+}
+
+for(var i= 0; i < toyota.length; i++){
+  toyota[i].style.display ="block"
+}
+}
+
+function honda() {
+var nissan = document.getElementsByClassName('nissan');
+      var mitsubishi = document.getElementsByClassName('mitsubishi');
+      var toyota = document.getElementsByClassName('toyota');
+      var honda = document.getElementsByClassName('honda');
+      var mazda = document.getElementsByClassName('mazda');
+
+
+for(var i= 0; i < mitsubishi.length; i++){
+  mitsubishi[i].style.display ="none"
+}
+
+for(var i= 0; i < nissan.length; i++){
+  nissan[i].style.display ="none"
+}
+
+for(var i= 0; i < mazda.length; i++){
+  mazda[i].style.display ="none"
+}
+
+for(var i= 0; i < honda.length; i++){
+  honda[i].style.display ="block"
+}
+
+for(var i= 0; i < toyota.length; i++){
+  toyota[i].style.display ="none"
+}
+}
+
+function mazda() {
+var nissan = document.getElementsByClassName('nissan');
+      var mitsubishi = document.getElementsByClassName('mitsubishi');
+      var toyota = document.getElementsByClassName('toyota');
+      var honda = document.getElementsByClassName('honda');
+      var mazda = document.getElementsByClassName('mazda');
+
+for(var i= 0; i < mitsubishi.length; i++){
+  mitsubishi[i].style.display ="none"
+}
+
+for(var i= 0; i < nissan.length; i++){
+  nissan[i].style.display ="none"
+}
+
+for(var i= 0; i < mazda.length; i++){
+  mazda[i].style.display ="block"
+}
+
+for(var i= 0; i < honda.length; i++){
+  honda[i].style.display ="none"
+}
+
+for(var i= 0; i < toyota.length; i++){
+  toyota[i].style.display ="none"
+}
+}
+
+
+// // intervalo de tiempo del carousel
+
+// $('.carousel').carousel({
+//     interval : 1000
+//   })
+
+// //
+    </script>
+</body>
+</html>
